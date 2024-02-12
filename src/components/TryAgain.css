@@ -1,0 +1,75 @@
+
+.show-grid-wrapper {
+    margin: 0 10%; /* 3% margin on each side */
+  }
+
+.show-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+  }
+  
+  .show-card {
+    border: 1px solid #000000;
+    padding: 10px;
+    text-align: left;
+    color: white;
+  }
+  
+  .show-card img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .show-card .rating-stars {
+    color: rgb(177, 160, 66); /* Change the color to yellow */
+  }
+  
+
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 10%; /* Same margin as the matrix */
+    margin-top: 3%;
+  }
+  
+  .logo {
+    max-width: 250px;
+  }
+  
+  .search-input {
+    flex: 1;
+    min-width: 400px;
+    margin-left: 20px; /* Distance from logo */
+    padding: 5px;
+    border: 1px solid #ffffff;
+    border-radius: 2px;
+  }
+  
+  .search-button {
+    max-width: 200px;
+    padding: 8px 15px;
+    margin-left: 10px; /* Distance between input and button */
+    border: none;
+    background-color: rgb(20, 98, 88);
+    color: white;
+    border-radius: 2px;
+    cursor: pointer;
+  }
+  
+  .search-button:hover {
+    background-color:rgb(10, 58, 52);
+  }
+  .no-shows-message {
+
+    color:#ffffff;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    
+  }

@@ -1,0 +1,61 @@
+body {
+    background-color: black; /* Set the background color of the entire page to black */
+  }
+  
+  .main-page-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: transparent; /* Set the background color of the container div to transparent */
+  }
+  
+  .main-page-content {
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-color: white; /* Set the background color of the content div to white */
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  /* Set minimum width to 600px for large screens */
+  @media (min-width: 600px) {
+    .main-page-content {
+      min-width: 450px;
+    }
+  }
+  
+  /* Set minimum width to 300px for mobile screens */
+  @media (max-width: 599px) {
+    .main-page-content {
+      min-width: 300px;
+    }
+  }
+  
+  .search-input {
+    flex: 1;
+    padding: 8px;
+    margin-right: 5px;
+    border: none;
+    border-radius: 2px;
+    background-color: white;
+  }
+  
+  .search-button {
+    padding: 8px 20px;
+    border: none;
+    border-radius: 2px;
+    background-color: rgb(20, 98, 88);
+    color: white;
+    max-width: 200px;
+    cursor: pointer;
+  }
+  
+  .llogo {
+    position: absolute;
+    top: 200px; /* Adjust this value as needed */
+    left: 50%;
+    transform: translateX(-50%);
+  }

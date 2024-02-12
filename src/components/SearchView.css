@@ -1,0 +1,121 @@
+
+.show-grid-wrapper-SV {
+    margin-left: 10%; /* 10% margin on each side */
+    margin-right: 10%; /* 10% margin on each side */
+    margin-bottom: 10%;
+  }
+
+  .show-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Update to auto-fit */
+    gap: 20px;
+}
+  
+  .show-card {
+    border: 1px solid #000000;
+    padding: 0%;
+    text-align: left;
+    color: white;
+  }
+  
+  .show-card-link {
+    text-decoration: none; /* Remove underline */
+  }
+
+  .show-card img {
+    max-width: 100%;
+    height: auto;
+    display: block; /* Ensures images behave as block elements */
+    margin: 0 auto; /* Centers the images horizontally */
+  }
+
+  .show-card .rating-stars {
+    color: rgb(177, 160, 66); /* Change the color to yellow */
+  }
+  
+
+  .header-SV {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0 10%; /* Same margin as the matrix */
+    margin-top: 3%;
+    margin-bottom: 5%;
+  }
+  
+  .logo {
+    max-width: 100%; /* Ensure logo adjusts to fit container */
+  }
+  
+  .search-input-SV {
+    flex: 1;
+    margin-left: 20px; /* Distance from logo */
+    padding: 5px;
+    border: 1px solid #ffffff;
+    border-radius: 2px;
+  }
+  
+  .search-button-SV {
+    max-width: 200px;
+    padding: 8px 15px;
+    margin-left: 10px; /* Distance between input and button */
+    border: none;
+    background-color: rgb(20, 98, 88);
+    color: white;
+    border-radius: 2px;
+    cursor: pointer;
+  }  
+  .search-button-SV:hover {
+    background-color:rgb(10, 58, 52);
+  }
+
+  .main-page-content-due {
+    display: flex;
+    align-items: center;
+    background-color: white; /* Set the background color of the content div to white */
+    padding: 10px;
+    border-radius: 5px;
+    width: 70%; /* Set width to 100% */
+    max-width: 90%; /* Limit maximum width */
+  }
+  
+  @media screen and (max-width: 600px) {
+    /* Apply these styles only on screens narrower than 600px (mobile screens) */
+    .logo-SV {
+      max-width: 80%; /* Adjust max-width for smaller screens */
+      margin-bottom: 10px; /* Add margin below logo */
+    }
+  
+    .header-SV {
+      flex-direction: column; /* Stack items vertically */
+      align-items: center; /* Center content horizontally */
+      margin-top: 10px; /* Add margin to separate header from content */
+    }
+  
+    .main-page-content-due {
+      width: 100%; /* Set width to 100% */
+      max-width: 90%; /* Limit maximum width */
+      text-align: center; /* Center text */
+    }
+  
+    .search-input-SV {
+      width: calc(100% - 20px); /* Set input width to take up available space minus button width and margins */
+      margin: 5px 0; /* Add margin above and below input */
+    }
+  
+    .search-button-SV {
+      width: calc(40% - 20px); /* Set button width to take up available space minus margins */
+      margin: 10px 0; /* Add margin above and below button */
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    /* Apply these styles only on screens narrower than 600px (mobile screens) */
+    .show-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr)); /* Display two movies per row */
+    }
+
+    .show-card {
+        width: 100%; /* Set width to 100% to occupy full width of the container */
+    }
+}
